@@ -2,6 +2,7 @@ import React from 'react';
 import {createStore} from 'redux'
 import {todos} from './todos'
 import {Provider} from 'react-redux'
+import Chat from './components/Chat'
 
 const reducer = (state = todos , action) => {
   return state
@@ -15,7 +16,8 @@ const App = () => {
   return(
     <Provider store={store}>
       <div>
-        App
+        <h1>App</h1>
+        <Chat />
       </div>
     </Provider>
   )
